@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        body{
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.678);
+        }
+        .calc{
+            background: rgb(0, 0, 0);
+            border: 4px black solid;
+            border-radius: 8px;
+            width: 400px;
+        }
+        .display{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(253, 253, 253);
+            color: black;
+        }
+        .calcSec{
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            margin: 8px;
+            height: 65px;
+            width: 65px;
+            border-radius: 10px;
+            padding: 5px;
+            transition: 1s;
+        }
+        button:hover{
+            color: rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
+            transition: .5s;
+        }
+        .row{
+            border: 3px black solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .clear{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .cccl{
+            text-align: center;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body >
+    <div class="calc">
+        <div class="display">
+            <h1 class="display-h1"></h1>
+        </div>
+        <div class="calcSec">
+            <div class="col">
+                <div class="row clear">
+                    <button class="cccl"><h1>C</h1></button>
+                    <button class="cccl">Backspace</button>
+
+                </div>
+                <div class="row">
+                    <button><h1>1</h1></button>
+                    <button><h1>2</h1></button>
+                    <button><h1>3</h1></button>
+                    <button><h1>+</h1></button>
+                </div>
+                <div class="row">
+                    <button><h1>4</h1></button>
+                    <button><h1>5</h1></button>
+                    <button><h1>6</h1></button>
+                    <button><h1>-</h1></button>
+                </div>
+                <div class="row">
+                    <button><h1>7</h1></button>
+                    <button><h1>8</h1></button>
+                    <button><h1>9</h1></button>
+                    <button><h1>*</h1></button>
+                </div>
+                <div class="row">
+                    <button><h1>0</h1></button>
+                    <button><h1>.</h1></button>
+                    <button><h1>=</h1></button>
+                    <button><h1>/</h1></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
